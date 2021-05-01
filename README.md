@@ -5,6 +5,9 @@
 - Download Flutter
 
 ## Tasks
-- Sample Card Design and Descriptions
-- Fixed Navigation Header / Swiping Left and Right animation / Do nothing when navigating to the same page
+- Design Settings
+- Design Profile
+- Design Chat ( Rafid )
+- Add Animation to Navigation
+
 
