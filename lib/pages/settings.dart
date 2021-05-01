@@ -12,9 +12,7 @@ class Settings extends StatelessWidget {
       body: Center(
         child: Column(
           children: <Widget>[
-            Navigation(),
             Expanded(
-              flex: 11,
               child: Text('Settings Page'),
             )
           ],

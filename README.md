@@ -5,5 +5,6 @@
 - Download Flutter
 
 ## Tasks
-- Routing
 - Sample Card Design and Descriptions
+- Fixed Navigation Header / Swiping Left and Right animation / Do nothing when navigating to the same page
+

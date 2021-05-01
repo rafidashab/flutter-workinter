@@ -13,20 +13,8 @@ class Match extends StatelessWidget {
       body: Center(
         child: Column(
           children: <Widget>[
-            Navigation(),
             Expanded(
-              flex: 7,
               child: SwipeCard(),
-            ),
-            Expanded(
-              flex: 4,
-              child: Container(
-                  color: Colors.blue[100],
-                  child: Column(children: [
-                    Row(
-                      children: [Text('Description of the job')],
-                    )
-                  ])),
             ),
           ],
         ),

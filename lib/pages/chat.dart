@@ -12,9 +12,7 @@ class Chat extends StatelessWidget {
       body: Center(
         child: Column(
           children: <Widget>[
-            Navigation(),
             Expanded(
-              flex: 11,
               child: Text('Chat Page'),
             )
           ],
