@@ -19,7 +19,7 @@ class _MainState extends State<Main> {
   int _selectedIndex = 2;
   List<Widget> _widgetOptions = <Widget>[
     Settings(),
-    Profile(),
+    ProfilePage(),
     Match(),
     Chat()
   ];
