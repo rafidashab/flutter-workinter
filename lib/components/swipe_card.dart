@@ -10,7 +10,6 @@ class _SwipeCardState extends State<SwipeCard> {
   List<String> welcomeImages = [
     "assets/welcome0.png",
     "assets/welcome1.png",
-    "assets/welcome2.png",
   ];
 
   @override
