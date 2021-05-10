@@ -11,7 +11,7 @@ class SwipeCard extends StatefulWidget {
 class _SwipeCardState extends State<SwipeCard> {
 
   List<JobPost> postings = [
-    JobPost(logoURL: '', company: 'Square', jobTitle: 'Software Developer', location: 'Vancouver', remote: true)
+    JobPost(logoURL: 'LogoURL', company: 'Square', jobTitle: 'Software Developer', location: 'Vancouver', remote: true)
   ];
 
   List<String> welcomeImages = [
@@ -37,7 +37,7 @@ class _SwipeCardState extends State<SwipeCard> {
           child: SizedBox(
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height,
-
+              child: JobPosting(data: postings[index]),
               // child: Image.asset('${welcomeImages[index]}')
           )
       ),
