@@ -23,8 +23,8 @@ class _SwipeCardState extends State<SwipeCard> {
   Widget build(BuildContext context) {
     CardController controller; //Use this to trigger swap.
     return TinderSwapCard(
-      swipeUp: true,
-      swipeDown: true,
+      swipeUp: false,
+      swipeDown: false,
       orientation: AmassOrientation.TOP,
       totalNum: postings.length,
       stackNum: 2,
@@ -36,9 +36,9 @@ class _SwipeCardState extends State<SwipeCard> {
       cardBuilder: (context, index) => Card(
           child: SizedBox(
               width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height,p
-              // child: JobPosting(data: postings[index]),
-              child: Image.asset('${welcomeImages[index]}')
+              height: MediaQuery.of(context).size.height,
+
+              // child: Image.asset('${welcomeImages[index]}')
           )
       ),
       cardController: controller = CardController(),
