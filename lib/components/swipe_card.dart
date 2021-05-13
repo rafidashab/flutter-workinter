@@ -11,7 +11,7 @@ class SwipeCard extends StatefulWidget {
 class _SwipeCardState extends State<SwipeCard> {
 
   List<JobPost> postings = [
-    JobPost(logoURL: 'LogoURL', company: 'Square', jobTitle: 'Software Developer', location: 'Vancouver', remote: true)
+    JobPost(logoURL: 'https://media.trustradius.com/vendor-logos/Ud/Hn/RPXT2FSCITVV.JPEG', company: 'Square', jobTitle: 'Software Developer', location: 'Vancouver', remote: true)
   ];
 
   List<String> welcomeImages = [

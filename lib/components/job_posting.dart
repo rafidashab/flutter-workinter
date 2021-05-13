@@ -12,20 +12,24 @@ class JobPosting extends StatefulWidget {
 class _JobPostingState extends State<JobPosting> {
   @override
   Widget build(BuildContext context) {
-    String job_type = widget.data.remote ? 'Remote' : 'On Site';
+    String jobType = widget.data.remote ? 'Remote' : 'On Site';
     return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Container(
-          child: Row(
-              children: [Text(widget.data.logoURL), Text(widget.data.company)]),
+          child:
+          Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+            Row(children: [
+              Image.network(widget.data.logoURL, width: 50, height: 50),
+              Text(widget.data.company),
+            ]),
+            Text(widget.data.location + ' ($jobType)'),
+          ]),
         ),
         Container(
+          alignment: Alignment.center,
           child: Text(widget.data.jobTitle),
         ),
-        Container(
-          child: Text(widget.data.location + ' ($job_type)'),
-        ),
+        Container(child: null),
         Container()
       ],
     );
